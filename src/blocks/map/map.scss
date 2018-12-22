@@ -1,0 +1,17 @@
+.map {
+  
+  &__content {
+  	height: 585px;
+
+		@include media-breakpoint-down(md) {
+	  	height: 485px;
+		}
+
+		@include media-breakpoint-down(xs) {
+	  	height: 306px;
+      width: calc(100% + 30px);
+      margin-left: -15px;
+      margin-right: -15px;
+		}
+  }
+}

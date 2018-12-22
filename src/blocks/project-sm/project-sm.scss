@@ -1,0 +1,103 @@
+.project-sm {
+	position: relative;
+
+	display: block;
+
+	min-height: 220px;
+
+	padding: 28px 20px 50px 33px;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	color: #fff;
+
+  @include media-breakpoint-down(lg) {
+    padding: 20px;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 28px 20px 50px 33px;
+    max-width: 277px;
+    margin: 0 auto 16px;
+  }
+  
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #133E51;
+    mix-blend-mode: multiply;
+    z-index: 2;
+    transition: $transition-base;
+  }
+  
+  &:hover {
+    
+    &:before {
+      opacity: .9;
+    }
+  }
+
+	&::after {
+		content: '';
+
+		position: absolute;
+    z-index: 3;
+
+		bottom: 0;
+		right: 0;
+
+		width: 48px;
+		height: 48px;
+
+		background-color: $secondary;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjkiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyOSAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE1LjQ1NiAyLjcxMjgzTDE3LjI2ODggMC45MDAwMjRMMjYuNzA2IDEwLjMzNzNMMjYuNzU5MyAxMC4yODM5TDI4LjU3MjEgMTIuMDk2N0wyOC41MTg4IDEyLjE1MDFMMjguNTcyMSAxMi4yMDM0TDI2Ljc1OTMgMTQuMDE2MkwyNi43MDYgMTMuOTYyOUwxNy4yNjg4IDIzLjQwMDFMMTUuNDU2IDIxLjU4NzNMMjMuNTE1NSAxMy41Mjc4SDAuNDAwMDI0VjEwLjkwNDJIMjMuNjQ3M0wxNS40NTYgMi43MTI4M1oiIGZpbGw9IndoaXRlIi8+PC9zdmc+);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+  
+  &__picture {
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .2;
+  }
+
+  &__title {
+  	font-size: 18px;
+  	line-height: 1.6;
+		color: #fff;
+    position: relative;
+    z-index: 3;
+
+		@include media-breakpoint-down(lg) {
+			font-size: 15px;
+		}
+
+    @include media-breakpoint-down(sm) {
+      font-size: 18px;
+    }
+  }
+  
+  
+  &--light {
+    
+    &:before {
+      background: #1D4B60;
+    }
+  }
+  
+  &--dark {
+    
+    &:before {
+      background: #0F3342;
+    }
+  }
+}

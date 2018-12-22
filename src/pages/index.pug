@@ -1,0 +1,40 @@
+extends ../templates/template.pug
+block content
+  +header('header--main').header--white
+  +front
+  .container.my-0.my-sm-80
+    .row
+      .col-xl-3.d-flex.flex-column.align-items-center.d-sm-block
+        h2
+          a(href="projects.html") Проекты
+        p С 2015 года мы выполнили более 30 проектов. Самые сложные, масштабные и уникальные для российского рынка, описаны в этом разделе.
+      .col-xl-9
+        .row.no-gutters
+          .col-md-3.col-sm-6.d-flex
+            +project-sm('project-1.png', 'Создание частного облака Банка России')
+          .col-md-3.col-sm-6.d-flex
+            +project-sm('project-2.png', 'Модернизация  серверной инфраструктуры Мосгортранса').project-sm--light
+          .col-md-3.col-sm-6.d-flex
+            +project-sm('project-3.png', 'Резервный центр обработки данных Татфондбанка').project-sm--dark
+          .col-md-3.col-sm-6.d-flex
+            +project-sm('project-4.png', 'Миграция информационной инфраструктуры Америабанка')
+  .bg-light.py-30.py-sm-80
+    .container
+      .row
+        .col-xl-3.d-flex.flex-column.align-items-center.d-sm-block
+          h2
+            a(href="services.html") Услуги
+          p Наша команда придумывает, документирует и реализует решения по хранению, обработке и передачи данных в корпоративных средах.
+        .col-xl-9
+          .row.no-gutters
+            .col-md
+              +service-sm('service-1.svg', 'Обследование и консалтинг')
+            .col-md
+              +service-sm('service-2.svg', 'Проектирование')
+            .col-md
+              +service-sm('service-3.svg', 'Поставка оборудования')
+            .col-md
+              +service-sm('service-4.svg', 'Внедрение')
+            .col-md
+              +service-sm('service-5.svg', 'Эксплуатация и сопровождение')
+  +footer

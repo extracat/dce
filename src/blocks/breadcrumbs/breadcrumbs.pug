@@ -1,0 +1,8 @@
+mixin breadcrumbs(page, modifier)
+  .breadcrumbs&attributes(attributes)
+    .container
+      .row
+        .col-12
+          .breadcrumbs__wrapper
+            a.breadcrumbs__home(href="index.html")
+            .breadcrumbs__item.breadcrumbs__item--current= page

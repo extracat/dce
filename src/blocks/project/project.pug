@@ -1,0 +1,18 @@
+mixin project(title, picture, client, info, modifier)
+  .project.item&attributes(attributes)
+    .container
+      .row
+        .col-lg-8
+          a.js-popup-open(href="project.html")
+            h4.project__header= title
+          .project__wrapper
+            .project__picture
+              img.project__img(src="img/" + picture, alt="Logo")
+            .project__content
+              .project__info
+                p.project__info-header Заказчик
+                .project__info-content
+                  p.project__client.font-weight-bold= client
+                  p.project__meta= info
+              p Мы — команда инженеров. Проектируем, внедряем, поддерживаем вычислительные комплексы и корпоративные сети передачи данных с 2005-го года.
+    a.js-popup-open.item__link(href="project.html")

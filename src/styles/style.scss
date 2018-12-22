@@ -1,0 +1,32 @@
+@import 'bootstrap';
+@import 'mixins';
+
+
+/* Plugins */
+@import 'plugins/slick';
+@import 'plugins/plugins-rewrite';
+
+
+/* Global styles */
+@import 'global/global-fonts';
+@import 'global/global-typo';
+@import 'global/global-scaffolding';
+
+
+/* Blocks */
+@import './src/blocks/header/header';
+@import './src/blocks/logo/logo';
+@import './src/blocks/menu/menu';
+@import './src/blocks/front/front';
+@import './src/blocks/project-sm/project-sm';
+@import './src/blocks/service-sm/service-sm';
+@import './src/blocks/footer/footer';
+@import './src/blocks/breadcrumbs/breadcrumbs';
+@import './src/blocks/project/project';
+@import './src/blocks/service/service';
+@import './src/blocks/item/item';
+@import './src/blocks/map/map';
+@import './src/blocks/modal/modal';
+@import './src/blocks/article/article';
+@import './src/blocks/partners/partners';
+@import './src/blocks/contacts/contacts';

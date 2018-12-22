@@ -1,0 +1,28 @@
+.header {
+  background-color: #EFF1F4;
+
+  @include media-breakpoint-down(sm) {
+    border-bottom: 3px solid $secondary;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+//    height: 145px;
+
+    @include media-breakpoint-down(sm) {
+      height: 98px;
+      padding-right: 5px;
+      padding-left: 20px;
+    }
+  }
+
+  &--white {
+    background-color: #fff;
+
+    @include media-breakpoint-down(sm) {
+      border-bottom: none;
+    }
+  }
+}

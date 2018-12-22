@@ -1,0 +1,40 @@
+.breadcrumbs {
+  padding-top: 18px;
+  padding-bottom: 35px;
+
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+
+  &__home {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 20px;
+    background: url(../img/icon-home-blue.svg) no-repeat center;
+    background-size: contain;
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    vertical-align: -3px;
+    margin-left: 7px;
+    padding-left: 27px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #474747;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 16px;
+      height: 10px;
+      background: url(../img/icon-right-arrow-gray.svg) no-repeat center;
+      background-size: contain;
+    }
+  }
+}

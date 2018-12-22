@@ -1,0 +1,33 @@
+.item {
+  position: relative;
+  transition: $transition-base;
+
+  &:hover {
+    background-color: #F5F6F8;
+
+    @include media-breakpoint-down(sm) {
+      background-color: transparent;
+    }
+
+    .item__link {
+      opacity: 1;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 400px;
+    width: 30%;
+    background: url(../img/icon-right-arrow-blue.svg) no-repeat center #EEF0F3;
+    background-size: 35px 60px;
+    transition: $transition-base;
+    opacity: 0;
+
+    @include media-breakpoint-down(md) {
+      display: none;
+    }
+  }
+}

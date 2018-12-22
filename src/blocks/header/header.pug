@@ -1,0 +1,22 @@
+mixin header(modifier)
+  .header&attributes(attributes)
+    .container
+      .row
+        .col-12
+          .header__content
+            if modifier == 'header--main'
+              +logo.logo--active
+            else
+              +logo
+            if modifier == 'header--main'
+              +menu
+            if modifier == 'header--about'
+              +menu('menu--about')
+            if modifier == 'header--services'
+              +menu('menu--services')
+            if modifier == 'header--projects'
+              +menu('menu--projects')
+            if modifier == 'header--careers'
+              +menu('menu--careers')
+            if modifier == 'header--contacts'
+              +menu('menu--contacts')

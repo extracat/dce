@@ -1,0 +1,42 @@
+.logo {
+  position: relative;
+  background: url('../img/logo.svg')no-repeat;
+  background-size: cover;
+  width: 208px;
+  height: 62px;
+  display: inline-block;
+  flex-shrink: 0;
+
+  @include media-breakpoint-down(sm) {
+    width: 169px;
+    height: 50px;
+  }
+
+  &--active {
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -41px;
+      height: 6px;
+      background-color: $secondary;
+      pointer-events: none;
+
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+    }
+  }
+
+  &--footer {
+    width: 152px;
+    height: 45px;
+    filter: invert(71%) sepia(36%) saturate(726%) hue-rotate(165deg) brightness(103%) contrast(103%);
+
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 25px;
+    }
+  }
+}

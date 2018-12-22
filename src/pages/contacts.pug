@@ -1,0 +1,21 @@
+extends ../templates/template.pug
+block content
+  +header('header--contacts')
+  +breadcrumbs('Контакты')
+  .container.mt-35.mt-md-0
+    .row
+      .col-lg-12
+        h1.mb-25.mb-sm-40 Контактная информация
+        h6.mb-20.mb-sm-25.text-center.text-sm-left Московский офис
+        .contacts
+          .contacts__item
+            span.contacts__item-text Телефон:
+            a.contacts__item-text.contacts__item-text--big(href="tel:84951086156") 8 495 108-61-56
+          .contacts__item
+            span.contacts__item-text Эл. почта:
+            a.contacts__item-text(href="mailto:info@dce.su") info@dce.su
+          .contacts__item
+            span.contacts__item-text Адрес:
+            span.contacts__item-text 125124,&nbsp;г.&nbsp;Москва, 3&#8209;я&nbsp;ул.&nbsp;Ямского&nbsp;Поля,&nbsp;дом&nbsp;2, корпус&nbsp;12,&nbsp;офис&nbsp;№&nbsp;314
+        +map.mb-sm-70
+  +footer
