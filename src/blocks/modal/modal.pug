@@ -5,9 +5,11 @@ mixin modal(modifier)
       .modal__content
         a.modal__close.js-popup-close(href="#")
         +article('article--project').modal__article
+
   if modifier == 'modal--service'
     .modal#modal--service
       .modal__overlay.js-popup-close
       .modal__content
         a.modal__close.js-popup-close(href="#")
-        +article('article--service').modal__article
+        +article('article').modal__article
+

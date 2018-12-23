@@ -1,13 +1,14 @@
-mixin service(title, picture, content, modifier)
+mixin service(title, picture, content, href)
+
   .service.item&attributes(attributes)
     .container
       .row
         .col-lg-8
-          a.js-popup-open(href="service.html")
+          a.js-popup-open(href= href)
             h4.service__header= title
           .service__wrapper
             .service__picture
               img.service__img(src="img/" + picture, alt="Logo")
             .service__content
               p= content
-    a.item__link.js-popup-open(href="service.html")
+    a.item__link.js-popup-open(href= href)

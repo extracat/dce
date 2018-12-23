@@ -11,14 +11,28 @@ document.body.removeChild(div);
 let animationSpeed = 500;
 
 // open popup
+// деактивировал пока функцию. пока не понятно как открывать в попапе разные страницы
 function openPopup() {
   $('.js-popup-open').on('click', function (e) {
-    $('.modal').fadeIn(animationSpeed);
-    $('html').css({
-      'padding-right': scrollWidth,
-      'overflow': 'hidden'
-    });
-    e.preventDefault();
+
+    if ($(this).attr("href") == "EDIT--ME") { 
+      $('.modal').fadeIn(animationSpeed);
+      $('html').css({
+        'padding-right': scrollWidth,
+        'overflow': 'hidden'
+      });
+      e.preventDefault();
+    }
+
+    if ($(this).attr("href") == "EDIT--ME") { 
+      $('.modal').fadeIn(animationSpeed);
+      $('html').css({
+        'padding-right': scrollWidth,
+        'overflow': 'hidden'
+      });
+      e.preventDefault();
+    }
+
   });
 }
 
