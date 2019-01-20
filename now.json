@@ -1,4 +1,11 @@
 {
 	"alias": ["extracat-dce"],
-	"version": 2
+	"version": 2,
+	"routes": [
+		{
+		"src": "/",
+		"dest": "/build",
+		"status": 200
+		}
+	]
 }
