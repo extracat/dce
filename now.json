@@ -1,7 +1,8 @@
 {
   "alias": ["extracat-dce"],
   "version": 2,
-    "routes": [
-      { "src": "/index.html", "dest": "/build/index.html"}
-    ]
+  "builds": [
+    { "src": "*.html", "use": "@now/static" },
+    { "src": "*.js", "use": "@now/node" },
+  ]
 }
