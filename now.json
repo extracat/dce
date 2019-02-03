@@ -1,7 +1,4 @@
 {
   "alias": ["extracat-dce"],
-  "version": 2,
-  "builds": [
-    { "src": "*.html", "use": "@now/static" }
-  ]
+  "version": 2
 }
