@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Выполнение работ по модернизации аппаратно-программного комплекса серверной инфраструктуры"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')

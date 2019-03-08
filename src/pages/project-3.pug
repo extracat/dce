@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Разработка рабочей документации для создания вычислительной инфраструктуры ЦОД"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')

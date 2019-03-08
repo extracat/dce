@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Техническое обслуживание сетевого хранилища"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')

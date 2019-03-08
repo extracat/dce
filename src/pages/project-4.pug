@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Создание резервного распределенного центра обработки данных"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')

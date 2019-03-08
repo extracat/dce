@@ -1,9 +1,10 @@
 head
-  meta(charset="UTF-8")
-  meta(http-equiv="X-UA-Compatible", content="IE=Edge")
-  - var title = title || "Data Centers Engineering"
-  title #{title}
-  link(rel='shortcut icon', href="img/favicon.ico", type="image/x-icon")
-  link(rel='stylesheet', href='css/style.css?version=2')
-  meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=0")
-  meta(name="format-detection", content="telephone=no")
+	block head 
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+		- var title = title ? title + " | Data Centers Engineering" : "Data Centers Engineering"
+		title #{title}
+		link(rel='shortcut icon', href="img/favicon.ico", type="image/x-icon")
+		link(rel='stylesheet', href='css/style.css?version=2')
+		meta(name="viewport", content="width=device-width, initial-scale=1, user-scalable=0")
+		meta(name="format-detection", content="telephone=no")

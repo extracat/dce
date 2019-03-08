@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Проектирование"
+
 block content
   +header('header--services')
   +breadcrumbs('Услуги')

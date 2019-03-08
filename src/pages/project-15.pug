@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Управление проектом построения информационно-технологической инфраструктуры РЦОД и КСИБ"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')

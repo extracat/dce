@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Создание надежной и высокопроизводительной корпоративной сети в здании заказчика"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')

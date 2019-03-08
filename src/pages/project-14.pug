@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Экспертиза решений в части закупок средств вычислительной техники и программного обеспечения"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')

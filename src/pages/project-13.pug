@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Реализация архивного хранения баз данных"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')

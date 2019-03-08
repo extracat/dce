@@ -1,4 +1,8 @@
 extends ../templates/template.pug
+
+block prepend head
+  - var title = "Разработка рабочей документации и авторский надзор в рамках проекта по миграции информационной инфраструктуры банка"
+
 block content
   +header('header--projects')
   +breadcrumbs('Проекты')
