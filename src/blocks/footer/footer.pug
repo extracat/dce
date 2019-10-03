@@ -1,10 +1,17 @@
+
+
 mixin footer(modifier)
-  .footer&attributes(attributes)
-    .container
-      .row
-        .col-12
-          .footer__content
-            +logo.logo--footer
-            +menu('menu--footer').menu--white
-            a.footer__link(href="tel:84951233456") 8 495 108-61-56
-            span.footer__address 3-я ул. Ямского Поля, 2к12 <br>Москва, 125124
+	div(style=";padding-top:30px;padding-bottom:30px")
+		.widget3
+		script.
+			city_widget('650x200', '.widget3')
+	.footer&attributes(attributes)
+		.container
+			.row
+				.col-12
+					.footer__content
+						+logo.logo--footer
+						+menu('menu--footer').menu--white
+						a.footer__link(href="tel:84951233456") 8 495 108-61-56
+						span.footer__address 3-я ул. Ямского Поля, 2к12 <br>Москва, 125124
+
