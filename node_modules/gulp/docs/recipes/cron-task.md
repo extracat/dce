@@ -3,7 +3,7 @@
 While logged in via a user that has privileges to run `gulp`, run the following:
 
     crontab -e
-    
+
 to edit your current "[crontab](https://en.wikipedia.org/wiki/Cron)" file.
 
 Typically, within a cron job, you want to run any binary using absolute paths,

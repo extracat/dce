@@ -24,7 +24,7 @@ var customOpts = {
   debug: true
 };
 var opts = assign({}, watchify.args, customOpts);
-var b = watchify(browserify(opts)); 
+var b = watchify(browserify(opts));
 
 // add transformations here
 // i.e. b.transform(coffeeify);

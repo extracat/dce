@@ -105,7 +105,7 @@ Output:
 
 Command: `gulp --tasks-simple`
 
-Output: 
+Output:
 ```shell
 one
 two

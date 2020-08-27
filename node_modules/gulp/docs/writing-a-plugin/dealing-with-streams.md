@@ -75,4 +75,3 @@ gulp.src('files/**/*.js', { buffer: false })
 ## Some plugins using streams
 
 * [gulp-svgicons2svgfont](https://github.com/nfroidure/gulp-svgiconstosvgfont)
-

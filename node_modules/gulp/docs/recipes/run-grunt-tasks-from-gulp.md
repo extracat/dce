@@ -7,7 +7,7 @@ It is possible to run Grunt tasks / Grunt plugins from within Gulp. This can be 
 very simple example `gulpfile.js`:
 
 ```js
-// npm install gulp@next grunt grunt-contrib-copy --save-dev
+// npm install gulp grunt grunt-contrib-copy --save-dev
 
 var gulp = require('gulp');
 var grunt = require('grunt');
@@ -32,7 +32,7 @@ gulp.task('copy', function (done) {
 
 ```
 
-Now start the task with: 
+Now start the task with:
 `gulp copy`
 
 With the aforementioned approach the grunt tasks get registered within gulp's task system. **Keep in mind grunt tasks are usually blocking (unlike gulp), therefore no other task (not even a gulp task) can run until a grunt task is completed.**
