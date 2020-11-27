@@ -15,7 +15,7 @@
     }
   }
 
-  .slick-arrow {
+  .slick-arrow, .slick-arrow:hover  {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -26,10 +26,17 @@
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-
     @media (max-width: 1400px) {
       width: 30px;
       height: 30px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      cursor: pointer;
     }
 
     @include media-breakpoint-down(sm) {
@@ -37,16 +44,26 @@
     }
   }
 
-  .slick-prev {
+  span.slick-prev.slick-arrow::before {
+    display:none;
+  }
+
+  span.slick-next.slick-arrow::before {
+    display:none;
+  }
+
+ 
+
+  .slick-prev, .slick-prev:hover {
     left: 36px;
     background-image: url(../img/icon-left-arrow-blue.svg);
 
     @media (max-width: 1400px) {
       left: 15px;
-    }
+     }
   }
 
-  .slick-next {
+  .slick-next, .slick-next:hover  {
     right: 36px;
     background-image: url(../img/icon-right-arrow-dark.svg);
 

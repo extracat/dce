@@ -39,6 +39,11 @@ var paths = {
     src: './src/fonts/*',
     dest: './build/fonts',
     watch: './src/fonts/*'
+  },
+  favicon: {
+    src: './src/favicon/**',
+    dest: './build',
+    watch: './src/favicon/**'
   }
 };
 
@@ -97,6 +102,15 @@ gulp.task('fonts', function () {
     }));
 });
 
+gulp.task('favicon', function () {
+  return gulp.src(paths.favicon.src)
+    .pipe(plumber())
+    .pipe(gulp.dest(paths.favicon.dest))
+    .pipe(browserSync.reload({
+      stream: true
+    }));
+});
+
 gulp.task('server', function () {
   browserSync.init({
     server: {
@@ -111,6 +125,7 @@ gulp.task('server', function () {
   gulp.watch(paths.js.watchPlugins, gulp.parallel('scripts'));
   gulp.watch(paths.images.watch, gulp.parallel('images'));
   gulp.watch(paths.fonts.watch, gulp.parallel('fonts'));
+  gulp.watch(paths.fonts.watch, gulp.parallel('favicon'));
 });
 
 
@@ -120,7 +135,8 @@ gulp.task('build', gulp.series(
   'styles',
   'scripts',
   'images',
-  'fonts'
+  'fonts',
+  'favicon'
 ));
 
 gulp.task('dev', gulp.series(
