@@ -27,6 +27,5 @@
     "build": "node_modules/gulp/node_modules/.bin/gulp build",
     "now-dev": "node_modules/gulp/node_modules/.bin/gulp dev",
     "now-build": "npm run build"
-  }
- 
+  } 
 }
