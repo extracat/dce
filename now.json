@@ -1,11 +1,12 @@
 {
   "alias": ["extracat-dce"],
   "version": 2,
-  "builds":
+  "builds": 
   [
     {
-      "src":"package.json",
-      "use":"@now/static-build"
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "build" }
     }
   ]
 }
