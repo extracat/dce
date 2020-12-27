@@ -1,0 +1,20 @@
+extends ../templates/template.pug
+
+block prepend head
+	- var title = "Заказчики"
+
+block content
+	+header('header--clients')
+	+breadcrumbs('Заказчики')
+	.container
+		.row
+			.col-lg-8
+				.article
+					.article__content
+						h1 Заказчики
+			.col-12.d-flex.flex-column.align-items-center.d-sm-block
+				+clients
+
+				
+						
+	+footer

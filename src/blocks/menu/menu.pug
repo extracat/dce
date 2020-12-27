@@ -17,6 +17,10 @@ mixin menu(modifier)
         a.menu__link.menu__link--active(href="projects.html") Проекты
       else
         a.menu__link(href="projects.html") Проекты
+      if modifier == 'menu--clients'
+        a.menu__link.menu__link--active(href="clients.html") Заказчики
+      else
+        a.menu__link(href="clients.html") Заказчики
       if modifier == 'menu--careers'
         a.menu__link.menu__link--active(href="careers.html") Карьера
       else

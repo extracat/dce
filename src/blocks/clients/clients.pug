@@ -1,0 +1,48 @@
+mixin clients(modifier)
+  .clients&attributes(attributes)
+    - var i = 1
+    while i <= 17
+      .clients__item       
+        img(src="img/client-" + i + ".png", srcset="img/client-" + i + "@2x.png 2x", alt="Client Logo")
+        +client_name(i++)
+
+
+
+mixin client_name(i)  
+  case i
+    when 1
+      h4.client_name ДИТ Москвы
+    when 2
+      h4.client_name Главгосэкспертиза России
+    when 3
+      h4.client_name Минтранс
+    when 4
+      h4.client_name МГФОМС
+    when 5
+      h4.client_name Мосводоканал
+    when 6
+      h4.client_name Пенсионный фонд России
+    when 7
+      h4.client_name Мосгортранс
+    when 8
+      h4.client_name Москоллектор
+    when 9
+      h4.client_name Ростелеком
+    when 10
+      h4.client_name Медиаскоп
+    when 11
+      h4.client_name РУДН
+    when 12
+      h4.client_name Пермские моторы
+    when 13
+      h4.client_name Инвитро
+    when 14
+      h4.client_name ВШЭ
+    when 15
+      h4.client_name НПФ Сбербанка
+    when 16
+      h4.client_name Сибур
+    when 17
+      h4.client_name ГУП ВЦКП
+    default
+      h4.client_name Default Name
