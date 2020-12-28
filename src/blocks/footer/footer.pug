@@ -1,10 +1,14 @@
 
 
 mixin footer(modifier)
-	div(style=";padding-top:30px;padding-bottom:30px")
+	div.dit-banner-lg
 		.widget3
 		script.
 			city_widget('650x200', '.widget3')
+	div.dit-banner-sm
+		.widget5
+		script.
+			city_widget('240x400', '.widget5')
 	.footer&attributes(attributes)
 		.container
 			.row

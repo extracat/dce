@@ -3018,15 +3018,6 @@
 
 
 
-$('.front').slick({
-  prevArrow : '<span class="slick-prev"></span>',
-  nextArrow : '<span class="slick-next"></span>',
-  dots : true,
-  autoplay: true
-}).on('setPosition', function (event, slick) {
-    slick.$slideTrack.find('.slick-slide').css('height', slick.$slideTrack.height() + 'px');
-});;
-
 (function (d, s) {
 
     var js, fjs = d.getElementsByTagName(s)[0];
@@ -3037,6 +3028,7 @@ $('.front').slick({
     var i = setInterval(function () {
         if (window.city_widget && document.readyState === "complete") {
             city_widget('650x200', '.widget3');
+            city_widget('240x400', '.widget5');
             clearInterval(i);
         }
     }, 50);
@@ -3045,7 +3037,22 @@ $('.front').slick({
     }, 5000);
 }(document, 'script'));
 
+$('.front').slick({
+  prevArrow : '<span class="slick-prev"></span>',
+  nextArrow : '<span class="slick-next"></span>',
+  dots : true,
+  autoplay: true
+}).on('setPosition', function (event, slick) {
+    slick.$slideTrack.find('.slick-slide').css('height', slick.$slideTrack.height() + 'px');
+});;
 
+
+
+$('.menu__btn').on('click', function (e) {
+  $(this).toggleClass('menu__btn--active');
+  $('.menu__content').slideToggle();
+  e.preventDefault();
+});
 if ( $('#map').length ) {
 
   ;(function () {
@@ -3072,12 +3079,6 @@ if ( $('#map').length ) {
   })();
 
 }
-
-$('.menu__btn').on('click', function (e) {
-  $(this).toggleClass('menu__btn--active');
-  $('.menu__content').slideToggle();
-  e.preventDefault();
-});
 // scrollbar width
 let div = document.createElement('div');
 div.style.overflowY = 'scroll';

@@ -39,3 +39,22 @@
   }
 
 }
+
+.dit-banner-lg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include media-breakpoint-down(sm) {
+      display:none;
+    }
+}
+
+.dit-banner-sm {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @include media-breakpoint-up(md) {
+      display:none;
+    }
+
+}

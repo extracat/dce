@@ -9125,6 +9125,20 @@ body {
     .footer .menu {
       display: none; } }
 
+.dit-banner-lg {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (max-width: 767.98px) {
+    .dit-banner-lg {
+      display: none; } }
+
+.dit-banner-sm {
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .dit-banner-sm {
+      display: none; } }
+
 .breadcrumbs {
   padding-top: 18px;
   padding-bottom: 35px; }
