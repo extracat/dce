@@ -8585,7 +8585,7 @@ body {
     .menu__content {
       position: absolute;
       top: 100%;
-      z-index: 2;
+      z-index: 10;
       left: 0;
       width: 100%;
       height: -webkit-calc(100vh - 98px);

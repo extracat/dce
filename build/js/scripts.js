@@ -3048,11 +3048,6 @@ $('.front').slick({
 
 
 
-$('.menu__btn').on('click', function (e) {
-  $(this).toggleClass('menu__btn--active');
-  $('.menu__content').slideToggle();
-  e.preventDefault();
-});
 if ( $('#map').length ) {
 
   ;(function () {
@@ -3079,6 +3074,12 @@ if ( $('#map').length ) {
   })();
 
 }
+$('.menu__btn').on('click', function (e) {
+  $(this).toggleClass('menu__btn--active');
+  $('.menu__content').slideToggle();
+  e.preventDefault();
+});
+
 // scrollbar width
 let div = document.createElement('div');
 div.style.overflowY = 'scroll';
@@ -3146,7 +3147,6 @@ isMobile();
 $(window).on('resize', function () {
   isMobile();
 });
-
 
 
 
